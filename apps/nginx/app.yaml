@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/boingloings33/platform-gitops.git
+    repoURL: https://github.com/boingloings33/nginx-service.git
     targetRevision: HEAD
     path: apps/nginx
 
