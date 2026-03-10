@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_USER/platform-gitops
+    repoURL: https://github.com/boingloings33/platform-gitops
     targetRevision: HEAD
     path: apps
 
