@@ -11,6 +11,8 @@ spec:
     repoURL: https://github.com/boingloings33/platform-gitops
     targetRevision: HEAD
     path: apps
+    directory:
+      recurse: true
 
   destination:
     server: https://kubernetes.default.svc
