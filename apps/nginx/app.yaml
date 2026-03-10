@@ -7,10 +7,21 @@ metadata:
 spec:
   project: default
 
-  source:
-    repoURL: https://github.com/boingloings33/nginx-service.git
+  sources:
+
+  # Helm chart source
+  - repoURL: https://github.com/boingloings33/nginx-service.git
     targetRevision: HEAD
     path: helm
+
+    helm:
+      valueFiles:
+        - $values/environments/dev/nginx-values.yaml
+
+  # Values repo
+  - repoURL: https://github.com/boingloings33/platform-gitops.git
+    targetRevision: HEAD
+    ref: values
 
   destination:
     server: https://kubernetes.default.svc
